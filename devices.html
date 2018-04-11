@@ -138,20 +138,25 @@
 								</ul>
 							</div>
 						</div>
-					</div>     
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Footer -->
 	<footer id="footer" role="contentinfo">
 		<div class="container">
 			<div class="row row-bottom-padded-sm">
 				<div class="col-md-12">
-					<p class="copyright text-center">&mdash; Copyright &copy; 2018 The Exynos7870-Dev Project. All Rights Reserved. &mdash;</p>
+					<p class="copyright text-center">&mdash; Copyright &copy; 2018 The Exynos7870 Project. All Rights Reserved. &mdash;</p>
 					<p class="copyright text-center">&mdash; <a href="Privacy.html" target="_blank">Privacy Policy </a> &mdash;</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-12 text-center">
 					<ul class="social social-circle">
-						<li><a href="https://www.GitHub.com/Exynos7870-Dev" target="_blank"><i class="icon-code"></i></a></li>
+						<li><a href="https://www.GitHub.com/Exynos7870" target="_blank"><i class="icon-code"></i></a></li>
 						<li><a href="https://plus.google.com/communities/116339021564888810193" target="_blank"><i class="icon-google-plus"></i></a></li>
 						<li><a href="https://telegram.me/cosmicosofficial" target="_blank"><i class="icon-group"></i></a></li>
 					</ul>
@@ -160,6 +165,28 @@
 		</div>
 	</footer>
 
+	<script>
+	var themeName = "css/dark";
+	function changeTheme(){
+		if (themeName == "css/dark"){
+				themeName = "css/light";
+				changeAcc();
+			} else {
+				themeName = "css/dark";
+				changeAcc();
+			}
+		document.getElementById("theme").href = themeName + ".css";
+		}
+		var athemeName = "css/accordion_dark";
+		function changeAcc(){
+			if (athemeName == "css/accordion_dark"){
+					athemeName = "css/accordion_light";
+				} else {
+					athemeName = "css/accordion_dark";
+				}
+			document.getElementById("acc_theme").href = athemeName + ".css";
+			}
+	</script>
 	<!-- jQuery -->
 	<script src="js/jquery.min.js"></script>
 	<!-- jQuery Easing -->
